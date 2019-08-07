@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Email>
+
+
+@{
+    ViewBag.Title = "Employee List";
+}
+
+<h1>Details.cshtml from Views/home/details </h1>
+@*<h3>@Model.PageTitle</h3>*@
+<table>
+    <thead>
+        <tr>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Subject</th>
+            <th>HtmlMessage</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var Email in Model)
+        {
+            <tr>
+
+                <td>
+                    Sender: @Email.Sender
+                </td>
+
+                <td>
+                    Receiver: @Email.Receiver
+                </td>
+
+                <td>
+                    Subject: @Email.Subject
+                </td>
+
+                <td>
+                    HtmlMessage: @Email.HtmlMessage
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

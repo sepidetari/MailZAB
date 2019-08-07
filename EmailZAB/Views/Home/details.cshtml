@@ -1,0 +1,24 @@
+﻿@model HomeDetailsViewModel
+
+@{
+    ViewBag.Title = "Employee details";
+}
+
+<h1>Details.cshtml from Views/home/details </h1>
+<h3>@Model.PageTitle </h3>
+
+<div>
+    Name: @Model.Email.Sender
+</div>
+<div>
+    Name: @Model.Email.Receiver
+</div>
+<div>
+    Name: @Model.Email.Subject
+</div>
+<div>
+    Name: @Model.Email.HtmlMessage
+</div>
+@section Scripts{
+    <script src="~/js/CostomScript.js"></script>
+}
